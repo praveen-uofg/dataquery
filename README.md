@@ -1,4 +1,4 @@
-# DataQuery [![Testing and Static Analysis](https://github.com/qudo-ai/querycraft/actions/workflows/general-pipeline.yml/badge.svg)](https://github.com/qudo-ai/querycraft/actions/workflows/general-pipeline.yml)
+# DataQuery [![Testing and Static Analysis](https://github.com/praveen-uofg/dataquery/actions/workflows/general-pipeline.yml/badge.svg)](https://github.com/praveen-uofg/dataquery/actions/workflows/general-pipeline.yml)
 
 ## About
 DataQuery is a Python package designed to simplify interactions with PostgreSQL databases. It leverages SQLAlchemy and pandas to provide an intuitive interface for retrieving, updating, inserting, and deleting data within a database. This package is ideal for data scientists and developers looking for a streamlined way to handle database operations.
