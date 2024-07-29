@@ -17,6 +17,9 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Clean up dist directory
+      run: rm -rf dist build
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
