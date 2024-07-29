@@ -15,9 +15,9 @@ maintainers = [
 license = {text = "BSD 3-Clause License"}
 keywords = ["database", "SQL", "PostgreSQL", "pandas"]
 classifiers = [
-    "Development Status :: 1 - Alpha",
-    "Intended Audience :: DS Developers",
-    "License :: OSI Approved :: BSD 3-Clause License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Operating System :: OS Independent",
@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/praveen-uofg/dataquery"
-documentation = "https://github.com/praveen-uofg/dataquery"
-repository = "https://github.com/praveen-uofg/dataquery"
+"Homepage" = "https://github.com/praveen-uofg/dataquery"
+"Documentation" = "https://github.com/praveen-uofg/dataquery"
+"Repository" = "https://github.com/praveen-uofg/dataquery"
 
 [tool.black]
 line-length = 121
