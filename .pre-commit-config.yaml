@@ -1,0 +1,57 @@
+default_stages: [commit, push]
+default_language_version:
+  python: python3.11
+repos:
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: v2.2.0
+    hooks:
+      - id: seed-isort-config
+
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+
+#  - repo: local
+#    hooks:
+#      - id: pylint
+#        name: pylint
+#        entry: pylint
+#        language: system
+#        types: [python]
+#        args:
+#          [
+#            "-rn", # Only display messages
+#            "-sn", # Don't display the score
+#            "--rcfile=pylintrc", # Link to your config file
+#          ]
+  - repo: https://github.com/peterdemin/pip-compile-multi
+    rev: v2.6.3
+    hooks:
+      - id: pip-compile-multi-verify
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: fix-byte-order-marker
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-builtin-literals
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: requirements-txt-fixer
+        files: ^.*requirements\.txt$
+#      - id: pretty-format-json
+#      - id: no-commit-to-branch
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+#      - id: check-json
+      - id: check-ast
+      - id: name-tests-test
+        args:  ["--pytest-test-first"]
+        files: tests/.*\.py$

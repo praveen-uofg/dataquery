@@ -1,0 +1,26 @@
+astroid==3.1.0
+coverage==7.4.4
+dill==0.3.8
+greenlet==3.0.3
+iniconfig==2.0.0
+isort==5.13.2
+mccabe==0.7.0
+numpy==1.26.4
+packaging==24.0
+pandas==2.2.1
+platformdirs==4.2.0
+pluggy==1.4.0
+psycopg2-binary==2.9.9
+pylint==3.1.0
+pytest==8.1.1
+pytest-mock==3.12.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+# -e git+ssh://git@github.com/qudo-ai/dataquery.git@3d3fadb502f5d970a8f282e7608e00aedff4e12a#egg=query_craft
+# -e git+ssh://git@github.com/qudo-ai/dataquery.git@3d3fadb502f5d970a8f282e7608e00aedff4e12a#egg=dataquery
+six==1.16.0
+SQLAlchemy==2.0.28
+tomlkit==0.12.4
+typing_extensions==4.10.0
+tzdata==2024.1
